@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mangroveWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="50%" stop-color="#1e3a1e" />
+      <stop offset="100%" stop-color="#0a1a0a" />
+    </linearGradient>
+    <linearGradient id="crocArmor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#365314" />
+      <stop offset="50%" stop-color="#4d7c0f" />
+      <stop offset="100%" stop-color="#1a2e05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Brackish Mangrove Swamp Water -->
+  <rect width="800" height="500" fill="url(#mangroveWater)" />
+
+  <!-- Mangrove Stilt Roots in Background -->
+  <path d="M 50,0 Q 80,180 120,350 M 120,0 Q 150,150 180,330 M 700,0 Q 660,180 620,360 M 760,0 Q 720,150 680,340" stroke="#3b1d0b" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.6" />
+
+  <!-- Water Surface Ripples -->
+  <path d="M 0,260 Q 200,240 400,260 T 800,250" stroke="#4ade80" stroke-width="2" fill="none" opacity="0.3" />
+  <path d="M 0,290 Q 250,270 500,290 T 800,280" stroke="#4ade80" stroke-width="2" fill="none" opacity="0.2" />
+
+  <!-- Saltwater Crocodile (Crocodylus porosus) - Floating Ambush Pose -->
+  <g transform="translate(140, 180)">
+    <!-- Submerged Torso & Tail under ripple line -->
+    <path d="M 240,80 C 350,85 450,110 580,160 C 500,165 380,150 240,140 Z" fill="#1e3a1e" opacity="0.8" />
+    
+    <!-- Serrated Dorsal Tail Ridges (Double Row merging into Single Row) -->
+    <g fill="#1a2e05">
+      <polygon points="340,75 350,60 360,75" />
+      <polygon points="370,78 380,63 390,78" />
+      <polygon points="400,83 412,68 424,83" />
+      <polygon points="435,90 448,75 460,90" />
+      <polygon points="475,100 490,82 505,100" />
+      <polygon points="520,115 535,95 550,115" />
+    </g>
+
+    <!-- Main Head and Jaws breaking surface -->
+    <!-- Lower Jaw & Throat -->
+    <path d="M 20,85 C 80,95 180,105 240,90 C 250,120 180,135 60,115 C 20,105 5,92 20,85 Z" fill="#3f6212" />
+
+    <!-- Massive Broad Upper Snout -->
+    <path d="M 10,75 C 60,65 140,60 210,65 C 235,45 260,50 260,80 C 230,85 100,88 10,75 Z" fill="url(#crocArmor)" />
+
+    <!-- Visible Interlocking Teeth -->
+    <g fill="#fef08a">
+      <polygon points="40,78 44,87 48,78" />
+      <polygon points="70,79 75,91 80,79" />
+      <polygon points="105,80 110,94 116,80" />
+      <!-- Big 4th Lower Tooth Fitting in Upper Notch -->
+      <polygon points="85,83 89,72 94,83" fill="#ffffff" />
+      <polygon points="135,80 140,90 145,80" />
+    </g>
+
+    <!-- Raised Crocodile Nostril Boss at Snout Tip -->
+    <ellipse cx="28" cy="72" rx="8" ry="5" fill="#14532d" />
+    <circle cx="25" cy="72" r="2" fill="#052e16" />
+    <circle cx="31" cy="72" r="2" fill="#052e16" />
+
+    <!-- Raised Armored Eyeball Socket & Slit Pupil -->
+    <g transform="translate(195, 52)">
+      <ellipse cx="0" cy="0" rx="16" ry="12" fill="#365314" stroke="#1a2e05" stroke-width="2" />
+      <!-- Golden Eye -->
+      <ellipse cx="0" cy="0" rx="10" ry="8" fill="#eab308" />
+      <!-- Vertical Slit Pupil -->
+      <ellipse cx="0" cy="0" rx="2" ry="7" fill="#000000" />
+      <!-- Reflection Highlight -->
+      <circle cx="-3" cy="-3" r="2" fill="#ffffff" opacity="0.8" />
+    </g>
+
+    <!-- Armored Neck Osteoderms (Scutes) -->
+    <g fill="#1a2e05">
+      <rect x="235" y="65" width="16" height="12" rx="4" />
+      <rect x="255" y="67" width="16" height="12" rx="4" />
+      <rect x="275" y="70" width="18" height="14" rx="4" />
+      <rect x="298" y="73" width="18" height="14" rx="4" />
+    </g>
+  </g>
+
+  <!-- Species Title Banner overlay -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="220" height="38" rx="8" fill="#14532d" fill-opacity="0.85" />
+    <text x="14" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">Crocodylus porosus</text>
+  </g>
+</svg>

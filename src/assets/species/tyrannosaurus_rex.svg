@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cretaceousSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c2d12" />
+      <stop offset="40%" stop-color="#c2410c" />
+      <stop offset="70%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+    <linearGradient id="trexSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="50%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#292524" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dramatic Mesozoic Volcano Sunset -->
+  <rect width="800" height="500" fill="url(#cretaceousSky)" />
+
+  <!-- Distant Volcanic Peaks and Ash Plumes -->
+  <polygon points="80,360 180,180 280,360" fill="#451a03" opacity="0.6" />
+  <polygon points="600,360 690,220 780,360" fill="#451a03" opacity="0.5" />
+  <ellipse cx="180" cy="160" rx="35" ry="20" fill="#451a03" opacity="0.4" />
+  <ellipse cx="195" cy="130" rx="50" ry="25" fill="#451a03" opacity="0.3" />
+
+  <!-- Floodplain Foreground with Ferns -->
+  <path d="M 0,360 C 200,340 450,370 800,350 L 800,500 L 0,500 Z" fill="#292524" />
+  <!-- Cycad / Prehistoric Fern Fronds -->
+  <g stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M 50,420 Q 80,330 60,260" />
+    <path d="M 60,420 Q 110,340 120,280" />
+    <path d="M 720,430 Q 700,330 670,270" />
+    <path d="M 740,430 Q 760,340 780,280" />
+  </g>
+
+  <!-- Tyrannosaurus rex Silhouette & Detail -->
+  <g transform="translate(180, 80)">
+    <!-- Long Balancing Tail -->
+    <path d="M 230,190 C 120,170 20,150 -80,110 C -120,95 -160,90 -160,105 C -110,140 -20,195 180,240 Z" fill="url(#trexSkin)" />
+
+    <!-- Massive Muscular Hind Limbs (Legs) -->
+    <!-- Far Leg -->
+    <path d="M 220,180 L 210,260 L 230,310 L 210,320" stroke="#3b1d0b" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <!-- Near Leg (Thigh, Shin, Metatarsus, 3 Talons) -->
+    <path d="M 270,180 C 290,200 300,240 280,270 L 295,330" stroke="url(#trexSkin)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <!-- Three Massive Bird-like Claws -->
+    <g fill="#0c0a09">
+      <polygon points="280,330 260,342 275,348 295,335" />
+      <polygon points="295,330 290,348 310,350 310,335" />
+      <polygon points="310,335 325,346 335,338 318,330" />
+    </g>
+
+    <!-- Torso and Rib Cage -->
+    <ellipse cx="270" cy="180" rx="90" ry="60" fill="url(#trexSkin)" transform="rotate(-15 270 180)" />
+
+    <!-- Tiny Two-Fingered Forelimb (Arm) -->
+    <path d="M 330,205 L 355,225 L 365,220" stroke="#451a03" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <line x1="365" y1="220" x2="372" y2="216" stroke="#0c0a09" stroke-width="3" stroke-linecap="round" />
+    <line x1="365" y1="220" x2="372" y2="225" stroke="#0c0a09" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Muscular S-Curved Neck -->
+    <path d="M 340,150 C 370,120 400,90 440,80 C 420,120 390,160 360,190 Z" fill="url(#trexSkin)" />
+
+    <!-- 1.5-Meter Long Massive Skull with Roaring Jaws -->
+    <!-- Upper Skull & Brow Hornlet -->
+    <path d="M 430,75 C 470,60 550,65 570,95 C 570,115 540,120 480,115 C 460,130 435,110 430,75 Z" fill="url(#trexSkin)" />
+    <!-- Lower Jaw (Mandible) dropped open -->
+    <path d="M 445,120 C 470,140 540,150 560,140 C 530,125 480,125 450,115 Z" fill="url(#trexSkin)" />
+
+    <!-- Banana-Sized Serrated Teeth -->
+    <g fill="#fef08a">
+      <polygon points="485,115 488,125 492,115" />
+      <polygon points="500,116 504,129 509,116" />
+      <polygon points="517,115 522,132 527,115" />
+      <polygon points="535,113 540,126 545,113" />
+      <polygon points="552,108 556,118 560,108" />
+      <!-- Lower Teeth pointing up -->
+      <polygon points="490,123 493,115 497,123" />
+      <polygon points="510,126 514,116 519,126" />
+      <polygon points="530,128 534,118 539,128" />
+    </g>
+
+    <!-- Deep-Set Binocular Eye with Amber Flare -->
+    <circle cx="465" cy="80" r="5" fill="#f59e0b" />
+    <circle cx="465" cy="80" r="2.5" fill="#0c0a09" />
+
+    <!-- Antorbital Fenestra (Skull Hollow) -->
+    <ellipse cx="505" cy="85" rx="16" ry="8" fill="#1c1917" opacity="0.6" />
+  </g>
+
+  <!-- Species Title Banner overlay -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="220" height="38" rx="8" fill="#7c2d12" fill-opacity="0.9" />
+    <text x="14" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">Tyrannosaurus rex</text>
+  </g>
+</svg>

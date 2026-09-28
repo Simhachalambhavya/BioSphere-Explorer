@@ -1,0 +1,6 @@
+{
+  "name": "BioSphere Explorer",
+  "description": "Interactive, AI-powered, age-adaptive encyclopedia of life for children and young scientists.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

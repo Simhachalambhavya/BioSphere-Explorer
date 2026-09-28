@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cretaceousDay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#fed7aa" />
+    </linearGradient>
+    <linearGradient id="trikeSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#57534e" />
+      <stop offset="50%" stop-color="#78716c" />
+      <stop offset="100%" stop-color="#44403c" />
+    </linearGradient>
+    <linearGradient id="hornBone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="50%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Prehistoric Cretaceous River Plain -->
+  <rect width="800" height="500" fill="url(#cretaceousDay)" />
+
+  <!-- Distant Conifer Forest -->
+  <polygon points="50,340 70,220 90,340" fill="#14532d" opacity="0.6" />
+  <polygon points="80,340 100,240 120,340" fill="#166534" opacity="0.7" />
+  <polygon points="650,340 670,230 690,340" fill="#14532d" opacity="0.6" />
+
+  <!-- Ground Floodplain -->
+  <path d="M 0,340 C 250,320 500,350 800,330 L 800,500 L 0,500 Z" fill="#292524" />
+
+  <!-- Triceratops horridus (Three-Horned Herbivore) -->
+  <g transform="translate(180, 140)">
+    <!-- Heavy Tail -->
+    <path d="M 120,180 C 60,190 -20,220 -80,240 C -40,210 20,180 80,150 Z" fill="url(#trikeSkin)" />
+
+    <!-- Massive Hind Pillar Legs -->
+    <!-- Far Leg -->
+    <rect x="130" y="160" width="35" height="120" rx="10" fill="#44403c" />
+    <!-- Near Leg -->
+    <rect x="180" y="150" width="45" height="140" rx="12" fill="url(#trikeSkin)" />
+
+    <!-- Heavy Barrel Torso with Bone Scutes -->
+    <ellipse cx="260" cy="150" rx="130" ry="85" fill="url(#trikeSkin)" />
+
+    <!-- Front Pillar Legs -->
+    <!-- Far Front Leg -->
+    <rect x="340" y="160" width="35" height="120" rx="10" fill="#44403c" />
+    <!-- Near Front Leg -->
+    <rect x="375" y="160" width="42" height="130" rx="12" fill="url(#trikeSkin)" />
+
+    <!-- Massive Solid Bone Frill Shield -->
+    <path d="M 370,120 C 370,40 430,-20 480,-20 C 510,-20 530,20 520,100 Z" fill="#78716c" stroke="#44403c" stroke-width="4" />
+    <!-- Frill Scalloped Epoccipitals (Bony studs on rim) -->
+    <g fill="#fde68a">
+      <circle cx="380" cy="35" r="5" />
+      <circle cx="410" cy="5" r="5" />
+      <circle cx="445" cy="-12" r="5.5" />
+      <circle cx="480" cy="-15" r="6" />
+      <circle cx="505" cy="5" r="5.5" />
+    </g>
+
+    <!-- Head & Robust Snout -->
+    <path d="M 430,90 C 470,90 530,120 560,140 C 550,165 520,180 470,170 C 430,160 410,130 430,90 Z" fill="url(#trikeSkin)" />
+
+    <!-- Parrot-Like Beak (Rostral Bone) -->
+    <path d="M 550,135 C 575,145 585,160 575,175 C 560,170 545,160 540,150 Z" fill="#d97706" />
+
+    <!-- Three Sharp Bony Horns -->
+    <!-- 1. Left Brow Horn (1-meter long curve) -->
+    <path d="M 470,85 C 510,30 560,-10 610,-20 C 590,15 550,60 495,95 Z" fill="url(#hornBone)" stroke="#78350f" stroke-width="2" />
+    <!-- 2. Right Brow Horn (Behind) -->
+    <path d="M 450,75 C 490,20 540,-20 590,-30 C 570,5 530,50 475,85 Z" fill="#d97706" opacity="0.8" />
+    <!-- 3. Short Nasal Horn -->
+    <path d="M 525,120 L 555,85 L 545,130 Z" fill="url(#hornBone)" />
+
+    <!-- Small Dark Eye beneath Brow Horn -->
+    <circle cx="465" cy="115" r="5" fill="#1c1917" />
+    <circle cx="466" cy="114" r="1.5" fill="#fef3c7" />
+  </g>
+
+  <!-- Species Title Banner overlay -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="220" height="38" rx="8" fill="#44403c" fill-opacity="0.9" />
+    <text x="14" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">Triceratops horridus</text>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="reefDepth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="50%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+    <linearGradient id="octopusSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#9a3412" />
+    </linearGradient>
+  </defs>
+
+  <!-- Coral Reef Seabed -->
+  <rect width="800" height="500" fill="url(#reefDepth)" />
+
+  <!-- Coral Formations and Reef Rocks -->
+  <path d="M 0,350 Q 80,260 160,340 T 320,330 T 480,360 T 640,320 T 800,340 L 800,500 L 0,500 Z" fill="#042f2e" />
+  
+  <!-- Sea Anemones & Brain Coral -->
+  <g fill="#f43f5e" opacity="0.7">
+    <circle cx="100" cy="380" r="35" />
+    <circle cx="700" cy="390" r="45" />
+  </g>
+  <g fill="#a855f7" opacity="0.6">
+    <circle cx="640" cy="420" r="30" />
+    <circle cx="170" cy="410" r="25" />
+  </g>
+
+  <!-- Common Octopus (Octopus vulgaris) -->
+  <g transform="translate(380, 220)">
+    <!-- 8 Curving Tentacles with Sucker Rings -->
+    <!-- Tentacle 1 (Left lower) -->
+    <path d="M -50,60 C -120,90 -180,120 -240,80 C -270,60 -250,20 -210,40" stroke="url(#octopusSkin)" stroke-width="26" stroke-linecap="round" fill="none" />
+    <!-- Tentacle 2 (Left mid) -->
+    <path d="M -60,30 C -150,30 -220,-20 -260,-60 C -280,-90 -240,-110 -210,-70" stroke="url(#octopusSkin)" stroke-width="22" stroke-linecap="round" fill="none" />
+    <!-- Tentacle 3 (Left low forward) -->
+    <path d="M -30,80 C -80,140 -120,180 -180,190 C -220,195 -240,160 -190,145" stroke="url(#octopusSkin)" stroke-width="24" stroke-linecap="round" fill="none" />
+    
+    <!-- Tentacle 4 (Right lower) -->
+    <path d="M 50,60 C 120,90 180,120 240,80 C 270,60 250,20 210,40" stroke="url(#octopusSkin)" stroke-width="26" stroke-linecap="round" fill="none" />
+    <!-- Tentacle 5 (Right mid) -->
+    <path d="M 60,30 C 150,30 220,-20 260,-60 C 280,-90 240,-110 210,-70" stroke="url(#octopusSkin)" stroke-width="22" stroke-linecap="round" fill="none" />
+    <!-- Tentacle 6 (Right low forward) -->
+    <path d="M 30,80 C 80,140 120,180 180,190 C 220,195 240,160 190,145" stroke="url(#octopusSkin)" stroke-width="24" stroke-linecap="round" fill="none" />
+    
+    <!-- Tentacle 7 & 8 (Reaching Front Center) -->
+    <path d="M -15,85 C -40,150 -60,200 -20,210 C 20,220 10,170 -5,130" stroke="url(#octopusSkin)" stroke-width="20" stroke-linecap="round" fill="none" />
+    <path d="M 15,85 C 40,150 60,200 20,210 C -20,220 -10,170 5,130" stroke="url(#octopusSkin)" stroke-width="20" stroke-linecap="round" fill="none" />
+
+    <!-- Sucker Dots along arms -->
+    <g fill="#fed7aa" opacity="0.9">
+      <circle cx="-160" cy="85" r="4.5" />
+      <circle cx="-185" cy="88" r="4" />
+      <circle cx="-210" cy="80" r="3.5" />
+      <circle cx="160" cy="85" r="4.5" />
+      <circle cx="185" cy="88" r="4" />
+      <circle cx="210" cy="80" r="3.5" />
+      <circle cx="-140" cy="170" r="4.5" />
+      <circle cx="140" cy="170" r="4.5" />
+    </g>
+
+    <!-- Large Bulbous Mantle (Head) -->
+    <ellipse cx="0" cy="-30" rx="75" ry="90" fill="url(#octopusSkin)" />
+
+    <!-- Intelligent Eyes with Horizontal Slit Pupils -->
+    <g transform="translate(-40, 20)">
+      <circle cx="0" cy="0" r="14" fill="#fbbf24" stroke="#7c2d12" stroke-width="3" />
+      <rect x="-10" y="-3" width="20" height="6" rx="2" fill="#0f172a" />
+    </g>
+    <g transform="translate(40, 20)">
+      <circle cx="0" cy="0" r="14" fill="#fbbf24" stroke="#7c2d12" stroke-width="3" />
+      <rect x="-10" y="-3" width="20" height="6" rx="2" fill="#0f172a" />
+    </g>
+
+    <!-- Camouflage Papillae Texture on Mantle -->
+    <g fill="#7c2d12" opacity="0.4">
+      <circle cx="-20" cy="-60" r="4" />
+      <circle cx="25" cy="-55" r="3.5" />
+      <circle cx="0" cy="-80" r="5" />
+      <circle cx="-35" cy="-25" r="3.5" />
+      <circle cx="35" cy="-20" r="4" />
+    </g>
+  </g>
+
+  <!-- Species Title Banner overlay -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="190" height="38" rx="8" fill="#0f766e" fill-opacity="0.9" />
+    <text x="14" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">Octopus vulgaris</text>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="oceanDeep" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="30%" stop-color="#0369a1" />
+      <stop offset="70%" stop-color="#0c4a6e" />
+      <stop offset="100%" stop-color="#082f49" />
+    </linearGradient>
+    <linearGradient id="sunbeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="whaleBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="whaleBelly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Ocean Background -->
+  <rect width="800" height="500" fill="url(#oceanDeep)" />
+
+  <!-- Atmospheric Light Rays from Surface -->
+  <polygon points="120,0 200,0 350,500 240,500" fill="url(#sunbeam)" />
+  <polygon points="320,0 420,0 580,500 450,500" fill="url(#sunbeam)" />
+  <polygon points="540,0 620,0 750,500 660,500" fill="url(#sunbeam)" />
+
+  <!-- Ambient Plankton / Marine Snow Particles -->
+  <g fill="#bae6fd" opacity="0.4">
+    <circle cx="90" cy="120" r="2" />
+    <circle cx="160" cy="280" r="1.5" />
+    <circle cx="280" cy="90" r="2.5" />
+    <circle cx="410" cy="180" r="1.5" />
+    <circle cx="560" cy="130" r="2" />
+    <circle cx="680" cy="320" r="2.5" />
+    <circle cx="730" cy="160" r="1.5" />
+    <circle cx="230" cy="420" r="2" />
+  </g>
+
+  <!-- Blue Whale Silhouette & Anatomy -->
+  <g transform="translate(40, 160)">
+    <!-- Massive Body Torso -->
+    <path d="M 50,110 C 120,50 260,30 450,50 C 580,65 650,95 680,105 C 650,115 580,135 480,140 C 320,150 180,155 90,145 Z" fill="url(#whaleBody)" />
+    
+    <!-- Expandable Ventral Grooves (Throat Pleats) -->
+    <path d="M 80,125 C 160,150 290,152 380,135 C 370,145 280,165 170,160 C 110,155 80,135 80,125 Z" fill="url(#whaleBelly)" opacity="0.85" />
+    
+    <!-- Throat Pleat Lines -->
+    <path d="M 120,138 Q 230,155 350,140" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6" />
+    <path d="M 140,145 Q 240,160 340,146" stroke="#64748b" stroke-width="2" fill="none" opacity="0.6" />
+    
+    <!-- Pectoral Flipper -->
+    <path d="M 260,120 C 310,170 330,210 320,215 C 305,215 280,180 250,135 Z" fill="#1e293b" />
+    
+    <!-- Tiny Dorsal Fin set far back -->
+    <path d="M 560,63 C 570,50 585,48 590,52 C 585,62 575,67 560,67 Z" fill="#1e293b" />
+
+    <!-- Massive Tail Flukes -->
+    <path d="M 670,105 C 700,75 730,55 750,60 C 740,85 715,105 700,108 C 715,115 740,135 750,160 C 730,162 700,140 670,110 Z" fill="#1e293b" />
+
+    <!-- Eye & Blowhole Mist plume -->
+    <circle cx="130" cy="105" r="3" fill="#0f172a" />
+    <circle cx="131" cy="104" r="1" fill="#94a3b8" />
+  </g>
+
+  <!-- Blowhole Vapor Spout above surface -->
+  <g transform="translate(180, 70)" opacity="0.65">
+    <path d="M 0,90 Q 20,40 15,10 Q 5,30 -5,90 Z" fill="#e0f2fe" />
+    <path d="M 5,90 Q 35,45 35,15 Q 15,35 0,90 Z" fill="#e0f2fe" />
+  </g>
+
+  <!-- Species Title Banner overlay -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="220" height="38" rx="8" fill="#0369a1" fill-opacity="0.8" />
+    <text x="14" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">Balaenoptera musculus</text>
+  </g>
+</svg>

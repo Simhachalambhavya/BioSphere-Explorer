@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="jungleDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="60%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#021a14" />
+    </linearGradient>
+    <linearGradient id="monsteraLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="frogGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#84cc16" />
+      <stop offset="50%" stop-color="#65a30d" />
+      <stop offset="100%" stop-color="#4d7c0f" />
+    </linearGradient>
+    <linearGradient id="eyeRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="50%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rainforest Understory Background -->
+  <rect width="800" height="500" fill="url(#jungleDark)" />
+
+  <!-- Background Rainforest Foliage & Water Droplets -->
+  <path d="M 0,100 C 150,80 250,220 300,450 L 0,500 Z" fill="#065f46" opacity="0.4" />
+  <path d="M 800,50 C 650,120 550,280 500,500 L 800,500 Z" fill="#047857" opacity="0.3" />
+
+  <!-- Tropical Wet Leaf Surface -->
+  <path d="M 80,480 C 180,300 350,220 720,240 C 780,320 750,460 620,500 Z" fill="url(#monsteraLeaf)" />
+  <path d="M 280,330 Q 450,270 700,260" stroke="#047857" stroke-width="4" fill="none" opacity="0.6" />
+  <path d="M 380,300 Q 420,270 480,260" stroke="#047857" stroke-width="2" fill="none" opacity="0.6" />
+  <path d="M 460,290 Q 520,260 590,255" stroke="#047857" stroke-width="2" fill="none" opacity="0.6" />
+
+  <!-- Red-Eyed Tree Frog Subject -->
+  <g transform="translate(220, 140)">
+    <!-- Back Hind Limbs (Folded) with Blue and Yellow Flank Bars -->
+    <path d="M 120,180 C 80,190 50,150 90,130 C 120,120 150,140 160,170 Z" fill="#2563eb" />
+    <!-- Yellow Flank Ribbons -->
+    <path d="M 95,140 L 105,175 M 115,135 L 125,170 M 135,135 L 145,170" stroke="#facc15" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Main Dorsal Green Body -->
+    <ellipse cx="230" cy="150" rx="90" ry="55" fill="url(#frogGreen)" />
+
+    <!-- Forelimb Left -->
+    <path d="M 180,165 C 170,210 150,230 130,240" stroke="#65a30d" stroke-width="16" stroke-linecap="round" fill="none" />
+    <!-- Bright Orange Suction Disc Toes -->
+    <g fill="#f97316">
+      <circle cx="115" cy="245" r="7" />
+      <circle cx="128" cy="252" r="7" />
+      <circle cx="142" cy="248" r="7" />
+      <circle cx="152" cy="240" r="6" />
+    </g>
+
+    <!-- Forelimb Right -->
+    <path d="M 280,175 C 300,210 320,235 340,245" stroke="#65a30d" stroke-width="16" stroke-linecap="round" fill="none" />
+    <g fill="#f97316">
+      <circle cx="330" cy="252" r="7" />
+      <circle cx="345" cy="255" r="7" />
+      <circle cx="360" cy="248" r="7" />
+    </g>
+
+    <!-- Hind Foot Peeking Out with Orange Toes -->
+    <g fill="#f97316" transform="translate(60, 200)">
+      <circle cx="10" cy="15" r="7" />
+      <circle cx="22" cy="22" r="7" />
+      <circle cx="35" cy="18" r="7" />
+    </g>
+
+    <!-- Wide Head & Snout -->
+    <path d="M 220,120 C 270,110 310,130 310,160 C 310,185 270,195 210,185 Z" fill="url(#frogGreen)" />
+
+    <!-- Giant Scarlet Red Bulging Eye Left -->
+    <g transform="translate(195, 80)">
+      <circle cx="30" cy="30" r="28" fill="url(#eyeRed)" stroke="#15803d" stroke-width="4" />
+      <!-- Vertical Narrow Slit Pupil -->
+      <ellipse cx="30" cy="30" rx="3.5" ry="20" fill="#09090b" />
+      <!-- Eye Highlight Reflection -->
+      <circle cx="24" cy="22" r="4" fill="#ffffff" opacity="0.8" />
+    </g>
+
+    <!-- Giant Scarlet Red Bulging Eye Right -->
+    <g transform="translate(265, 85)">
+      <circle cx="28" cy="28" r="26" fill="url(#eyeRed)" stroke="#15803d" stroke-width="4" />
+      <ellipse cx="28" cy="28" rx="3.5" ry="18" fill="#09090b" />
+      <circle cx="22" cy="21" r="3.5" fill="#ffffff" opacity="0.8" />
+    </g>
+
+    <!-- Nostril and gentle mouth line -->
+    <circle cx="300" cy="155" r="2" fill="#3f6212" />
+    <path d="M 280,172 Q 295,170 308,162" stroke="#365314" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- Species Title Banner overlay -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="220" height="38" rx="8" fill="#065f46" fill-opacity="0.85" />
+    <text x="14" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">Agalychnis callidryas</text>
+  </g>
+</svg>

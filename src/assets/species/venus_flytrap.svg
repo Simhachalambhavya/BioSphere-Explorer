@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bogBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="trapRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <linearGradient id="trapGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#84cc16" />
+      <stop offset="100%" stop-color="#4d7c0f" />
+    </linearGradient>
+  </defs>
+
+  <!-- Bog Environment -->
+  <rect width="800" height="500" fill="url(#bogBg)" />
+
+  <!-- Sphagnum Peat Moss Base -->
+  <path d="M 0,380 C 150,340 300,370 450,350 C 600,330 720,380 800,360 L 800,500 L 0,500 Z" fill="#365314" />
+  <path d="M 0,420 C 200,400 500,410 800,400 L 800,500 L 0,500 Z" fill="#1e3a1e" opacity="0.7" />
+
+  <!-- Venus Flytrap Rosette (Dionaea muscipula) -->
+  <g transform="translate(400, 220)">
+    <!-- Central Main Snap Trap (Open, Facing Forward) -->
+    <g transform="translate(0, 30)">
+      <!-- Green Stalk Petiole -->
+      <path d="M 0,160 Q 5,80 0,0" stroke="url(#trapGreen)" stroke-width="24" stroke-linecap="round" fill="none" />
+
+      <!-- Left Valve -->
+      <path d="M -10,0 C -60,-20 -110,-10 -130,30 C -140,65 -90,95 -20,70 Z" fill="url(#trapGreen)" />
+      <!-- Interior Crimson Nectar Surface -->
+      <path d="M -20,10 C -55,-5 -95,5 -110,35 C -120,60 -80,80 -25,60 Z" fill="url(#trapRed)" />
+      
+      <!-- Right Valve -->
+      <path d="M 10,0 C 60,-20 110,-10 130,30 C 140,65 90,95 20,70 Z" fill="url(#trapGreen)" />
+      <path d="M 20,10 C 55,-5 95,5 110,35 C 120,60 80,80 25,60 Z" fill="url(#trapRed)" />
+
+      <!-- Interlocking Marginal Cilia (Trap Spikes) - Left -->
+      <g stroke="#bef264" stroke-width="3" stroke-linecap="round">
+        <line x1="-120" y1="10" x2="-145" y2="-5" />
+        <line x1="-105" y1="0" x2="-130" y2="-18" />
+        <line x1="-85" y1="-8" x2="-110" y2="-28" />
+        <line x1="-65" y1="-14" x2="-85" y2="-36" />
+        <line x1="-45" y1="-16" x2="-60" y2="-40" />
+        <line x1="-25" y1="-12" x2="-35" y2="-38" />
+      </g>
+
+      <!-- Interlocking Marginal Cilia (Trap Spikes) - Right -->
+      <g stroke="#bef264" stroke-width="3" stroke-linecap="round">
+        <line x1="120" y1="10" x2="145" y2="-5" />
+        <line x1="105" y1="0" x2="130" y2="-18" />
+        <line x1="85" y1="-8" x2="110" y2="-28" />
+        <line x1="65" y1="-14" x2="85" y2="-36" />
+        <line x1="45" y1="-16" x2="60" y2="-40" />
+        <line x1="25" y1="-12" x2="35" y2="-38" />
+      </g>
+
+      <!-- Sensitive Trigger Hairs (3 hairs in center of lobe) -->
+      <g stroke="#ffffff" stroke-width="1.5" stroke-linecap="round">
+        <line x1="-60" y1="30" x2="-62" y2="18" />
+        <line x1="-50" y1="42" x2="-54" y2="30" />
+        <line x1="-70" y1="40" x2="-75" y2="28" />
+        <line x1="60" y1="30" x2="62" y2="18" />
+        <line x1="50" y1="42" x2="54" y2="30" />
+        <line x1="70" y1="40" x2="75" y2="28" />
+      </g>
+    </g>
+
+    <!-- Side Closed Trap Left -->
+    <g transform="translate(-160, 60) rotate(-25)">
+      <path d="M 0,120 Q -20,50 -30,0" stroke="url(#trapGreen)" stroke-width="16" stroke-linecap="round" fill="none" />
+      <path d="M -30,0 C -60,-20 -90,10 -70,40 C -50,60 -20,40 -30,0 Z" fill="url(#trapGreen)" />
+      <!-- Closed interlocking teeth -->
+      <path d="M -65,-5 L -60,5 L -55,-5 L -50,5 L -45,-5 L -40,5" stroke="#bef264" stroke-width="2.5" fill="none" />
+    </g>
+
+    <!-- Side Open Trap Right -->
+    <g transform="translate(160, 70) rotate(25)">
+      <path d="M 0,120 Q 20,50 30,0" stroke="url(#trapGreen)" stroke-width="16" stroke-linecap="round" fill="none" />
+      <path d="M 30,0 C 70,-15 90,20 70,50 C 50,70 10,40 30,0 Z" fill="url(#trapGreen)" />
+      <ellipse cx="60" cy="25" rx="20" ry="14" fill="url(#trapRed)" />
+    </g>
+  </g>
+
+  <!-- Species Title Banner overlay -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="200" height="38" rx="8" fill="#b91c1c" fill-opacity="0.85" />
+    <text x="14" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">Dionaea muscipula</text>
+  </g>
+</svg>

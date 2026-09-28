@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="microGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#042f2e" />
+      <stop offset="60%" stop-color="#021c17" />
+      <stop offset="100%" stop-color="#010e0b" />
+    </radialGradient>
+    <linearGradient id="cyanoGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+    <radialGradient id="heterocystGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </radialGradient>
+  </defs>
+
+  <!-- Microscope Darkfield Background -->
+  <rect width="800" height="500" fill="url(#microGlow)" />
+
+  <!-- Circular Aperture Guide & Micrometer Scale -->
+  <circle cx="400" cy="250" r="230" stroke="#059669" stroke-width="2" fill="none" opacity="0.4" />
+  <g stroke="#059669" stroke-width="1" opacity="0.25">
+    <line x1="170" y1="250" x2="630" y2="250" />
+    <line x1="400" y1="20" x2="400" y2="480" />
+  </g>
+
+  <!-- Filamentous Cyanobacteria Colony (Anabaena sphaerica) -->
+  <g transform="translate(100, 220)">
+    <!-- Transparent Protective Mucilage Sheath Envelope -->
+    <path d="M 0,20 C 100,-40 220,-20 320,30 C 420,80 500,20 600,-10" stroke="#2dd4bf" stroke-width="50" stroke-linecap="round" fill="none" opacity="0.2" />
+
+    <!-- Sinuous Chain of Photosynthetic Vegetative Cells -->
+    <!-- Cell 1 -->
+    <circle cx="20" cy="20" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <!-- Cell 2 -->
+    <circle cx="50" cy="12" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <!-- Cell 3 -->
+    <circle cx="80" cy="5" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <!-- Cell 4 -->
+    <circle cx="110" cy="2" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <!-- Cell 5 -->
+    <circle cx="140" cy="3" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <!-- Cell 6 -->
+    <circle cx="170" cy="8" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    
+    <!-- SPECIAL CELL: Heterocyst (Nitrogen-Fixing Thick-Walled Cell) -->
+    <circle cx="205" cy="15" r="22" fill="url(#heterocystGlow)" stroke="#facc15" stroke-width="3" />
+    <circle cx="205" cy="15" r="14" fill="#0d9488" opacity="0.6" />
+    <!-- Polar plugs on heterocyst -->
+    <circle cx="187" cy="12" r="3" fill="#ffffff" />
+    <circle cx="223" cy="18" r="3" fill="#ffffff" />
+
+    <!-- Continued Chain -->
+    <!-- Cell 8 -->
+    <circle cx="240" cy="22" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <!-- Cell 9 -->
+    <circle cx="270" cy="30" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <!-- Cell 10 -->
+    <circle cx="300" cy="38" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    
+    <!-- SPECIAL CELL: Akinete (Large Thick-Walled Resting Survival Spore) -->
+    <ellipse cx="338" cy="45" rx="22" ry="18" fill="#15803d" stroke="#86efac" stroke-width="3" />
+
+    <!-- Continued Cells -->
+    <circle cx="375" cy="48" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <circle cx="405" cy="46" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <circle cx="435" cy="40" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <circle cx="465" cy="30" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <circle cx="495" cy="18" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <circle cx="525" cy="6" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <circle cx="555" cy="-5" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+    <circle cx="585" cy="-14" r="16" fill="url(#cyanoGreen)" stroke="#10b981" stroke-width="2" />
+  </g>
+
+  <!-- Gas Vesicles & Internal Thylakoid Patterns -->
+  <g fill="#a7f3d0" opacity="0.4">
+    <circle cx="180" cy="225" r="3" />
+    <circle cx="210" cy="220" r="3" />
+    <circle cx="240" cy="235" r="3" />
+    <circle cx="370" cy="265" r="3" />
+    <circle cx="400" cy="268" r="3" />
+  </g>
+
+  <!-- Magnification Callout -->
+  <g transform="translate(620, 420)">
+    <rect x="0" y="0" width="150" height="50" rx="8" fill="#042f2e" stroke="#059669" stroke-width="1.5" />
+    <text x="14" y="24" fill="#a7f3d0" font-family="monospace" font-size="12">MAG: 1,000x</text>
+    <text x="14" y="40" fill="#6ee7b7" font-family="monospace" font-size="10">O2 Photosynthesis</text>
+  </g>
+
+  <!-- Species Title Banner overlay -->
+  <g transform="translate(30, 440)">
+    <rect x="0" y="0" width="220" height="38" rx="8" fill="#065f46" fill-opacity="0.85" />
+    <text x="14" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14">Anabaena sphaerica</text>
+  </g>
+</svg>
