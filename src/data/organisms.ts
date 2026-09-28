@@ -1,4 +1,5 @@
 import { Organism, HabitatCategory, OrganismCategory } from '../types/organism';
+import { ORGANISM_IMAGE_CATALOG } from '../services/imageService';
 
 // Hero image assets generated via image model
 export const HERO_ASSETS = {
@@ -14,22 +15,23 @@ export const ORGANISM_IMAGES: Record<string, string> = {
   'great-white-shark': '/src/assets/images/great_white_shark_1790605629736.jpg',
   'african-elephant': '/src/assets/images/african_elephant_1790605645078.jpg',
   'bald-eagle': '/src/assets/images/bald_eagle_1790605668654.jpg',
-  'blue-whale': '/src/assets/species/blue_whale.svg',
-  'bottlenose-dolphin': '/src/assets/species/bottlenose_dolphin.svg',
-  'red-eyed-tree-frog': '/src/assets/species/red_eyed_tree_frog.svg',
-  'monarch-butterfly': '/src/assets/species/monarch_butterfly.svg',
-  'english-oak': '/src/assets/species/english_oak.svg',
-  'tyrannosaurus-rex': '/src/assets/species/tyrannosaurus_rex.svg',
-  'tardigrade': '/src/assets/species/tardigrade.svg',
-  'common-octopus': '/src/assets/species/common_octopus.svg',
-  'venus-flytrap': '/src/assets/species/venus_flytrap.svg',
-  'axolotl': '/src/assets/species/axolotl.svg',
-  'honey-bee': '/src/assets/species/honey_bee.svg',
-  'fly-agaric': '/src/assets/species/fly_agaric.svg',
-  'triceratops': '/src/assets/species/triceratops.svg',
-  'emperor-penguin': '/src/assets/species/emperor_penguin.svg',
-  'saltwater-crocodile': '/src/assets/species/saltwater_crocodile.svg',
-  'cyanobacteria': '/src/assets/species/cyanobacteria.svg',
+  'blue-whale': '/src/assets/images/blue_whale_marine_1790608853706.jpg',
+  'bottlenose-dolphin': 'https://images.unsplash.com/photo-1607153333879-c1a05825843d?auto=format&fit=crop&w=1200&q=80',
+  'red-eyed-tree-frog': 'https://images.unsplash.com/photo-1579380656108-62d08a5c3785?auto=format&fit=crop&w=1200&q=80',
+  'monarch-butterfly': '/src/assets/images/monarch_butterfly_macro_1790608870356.jpg',
+  'english-oak': 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80',
+  'tyrannosaurus-rex': '/src/assets/images/tyrannosaurus_paleoart_1790608957019.jpg',
+  'tardigrade': 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80',
+  'common-octopus': 'https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?auto=format&fit=crop&w=1200&q=80',
+  'venus-flytrap': '/src/assets/images/venus_flytrap_botanical_1790608899672.jpg',
+  'axolotl': 'https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?auto=format&fit=crop&w=1200&q=80',
+  'honey-bee': 'https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=1200&q=80',
+  'fly-agaric': 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80',
+  'triceratops': '/src/assets/images/prehistoric_dinosaur_world_1790604478527.jpg',
+  'emperor-penguin': '/src/assets/images/emperor_penguin_polar_1790608886208.jpg',
+  'saltwater-crocodile': 'https://images.unsplash.com/photo-1527525443983-6e60c75fff46?auto=format&fit=crop&w=1200&q=80',
+  'cyanobacteria': '/src/assets/images/microscopic_cell_world_1790604498200.jpg',
+  'leafcutter-ant': 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80',
 };
 
 export const HABITATS_INFO: Record<
@@ -3293,7 +3295,172 @@ export const ORGANISMS: Organism[] = [
       scientificLesson: 'Cyanobacteria engineered Earth\'s atmosphere through oxygenic photosynthesis, making complex animal and plant life possible.',
     },
   },
+  // 22. LEAFCUTTER ANT (Atta cephalotes)
+  {
+    id: 'leafcutter-ant',
+    commonName: 'Leafcutter Ant',
+    scientificName: 'Atta cephalotes',
+    category: 'insects',
+    categoryLabel: 'Insects',
+    habitat: 'Tropical rainforest floors and subterranean nest chambers',
+    habitatCategory: 'rainforests',
+    geographicDistribution: 'Central and South America (Neotropical forests)',
+    diet: 'herbivore',
+    dietLabel: 'Herbivore (Fungal Cultivator)',
+    breathingMethod: 'Spiracles (lateral abdominal & thoracic pores connecting to tracheae)',
+    bodyCovering: 'Hardened chitinous exoskeleton with sensory setae hairs',
+    locomotion: 'Six jointed walking legs with pretarsal claws and arolium pads',
+    reproduction: 'Oviparous (Single fertile queen lays thousands of eggs attended by nurse workers)',
+    lifecycle: 'Complete Holometabolous: Egg → Larva → Pupa → Adult worker / soldier / queen',
+    lifespan: 'Workers: 2–6 months; Queens: 15–20 years',
+    size: 'Workers: 2 to 14 mm; Soldiers: up to 20 mm; Queen: 30 mm',
+    weight: '5 to 60 milligrams depending on caste polymorphism',
+    adaptations: [
+      'Vibratory mandibular shearing allowing rapid cutting of tough rainforest foliage',
+      'Mutualistic agriculture: cultivating underground basidiomycete fungus gardens',
+      'Pronounced caste polymorphism with specialized worker and soldier divisions of labor',
+      'Trail-following pheromones guiding massive foraging columns across hundreds of meters',
+    ],
+    behavior: 'Complex eusocial superorganism communication via pheromones, stridulation, and antennation',
+    socialStructure: 'Eusocial colony consisting of millions of individuals with a single reproductive queen',
+    ecologicalRole: 'Major Neotropical primary consumer processing up to 15% of all foliar canopy leaves',
+    conservationStatus: 'least_concern',
+    populationEstimate: {
+      numberOrRange: 'Hundreds of trillions across Neotropical forests',
+      isUncertain: true,
+      notes: 'Colonies are highly abundant across primary and secondary rainforests.',
+    },
+    threats: ['Severe forest deforestation', 'Pesticide runoff', 'Invasive army ant raids'],
+    humanSafety: {
+      scoreOutOf10: 2,
+      level: 'Very Low',
+      context: 'Leafcutter ants are non-aggressive toward humans. Large soldier ants can pinch the skin with mandibles if an underground nest mound is disturbed.',
+      safeBehaviorGuide: 'Watch their fascinating leaf-carrying trails peacefully from alongside the path without stepping on the column.',
+    },
+    amazingFacts: [
+      'Leafcutter ants were the planet\'s first farmers, practicing sophisticated agriculture for over 50 million years.',
+      'A single leafcutter ant can carry up to 50 times its own body weight in its mandibles—like a human carrying a car!',
+      'They do not eat the leaves they harvest; they chew them into mulch to grow a unique fungus that only lives in their nests.',
+      'A single mature colony can build an underground metropolis the size of a two-story house with thousands of rooms.',
+      'Tiny baby worker ants called minims ride atop the carried leaf pieces to swat away parasitic phorid flies.',
+    ],
+    bodyParts: [
+      { id: 'mandibles', name: 'Serrated Mandibles', function: 'Leaf Shearing & Defense', description: 'Chitin jaws moving horizontally, reinforced with zinc atoms to slice tough rainforest leaves.', x: 18, y: 45 },
+      { id: 'antennae', name: 'Elbowed Antennae', function: 'Chemoreception & Touch', description: 'Highly sensitive organs detecting trail pheromones, humidity, and nestmate scents.', x: 22, y: 22 },
+      { id: 'head', name: 'Head & Brain', function: 'Sensory Processing', description: 'Compound eyes and powerful mandibular muscle anchors.', x: 28, y: 35 },
+      { id: 'thorax', name: 'Thorax (Mesosoma)', function: 'Locomotion Engine', description: 'Central body segment housing leg-powering muscles and tracheal spiracles.', x: 48, y: 42 },
+      { id: 'legs', name: 'Six Jointed Legs', function: 'Climbing & Transport', description: 'Clawed feet allowing ants to scale smooth rainforest trees while bearing heavy foliage.', x: 48, y: 72 },
+      { id: 'gaster', name: 'Gaster (Abdomen)', function: 'Digestion & Glands', description: 'Contains the digestive tract, metapleural antibiotic glands, and pheromone sting apparatus.', x: 78, y: 46 },
+    ],
+    foodChain: {
+      trophicLevel: 'Primary Consumer',
+      chainSteps: ['Rainforest Foliage', 'Cultivated Fungus Garden', 'Leafcutter Ant', 'Giant Anteater', 'Jaguar'],
+      eats: ['Specialized cultivated mycelium (Leucoagaricus gongylophorus) nurtured with leaf mulch'],
+      eatenBy: ['Giant Anteaters', 'Tamanduas', 'Armadillos', 'Phorid Parasitic Flies', 'Birds'],
+      ecologicalRole: 'Cycles nutrients from high forest canopy directly into subterranean soil, aerating deep earth.',
+    },
+    taxonomy: {
+      kingdom: 'Animalia',
+      phylum: 'Arthropoda',
+      class: 'Insecta',
+      order: 'Hymenoptera',
+      family: 'Formicidae',
+      genus: 'Atta',
+      species: 'Atta cephalotes',
+    },
+    sources: [
+      { name: 'Smithsonian Tropical Research Institute', organization: 'Smithsonian Institution', year: '2023', type: 'Entomology & Ecology' },
+      { name: 'AntWeb Biodiversity Database', organization: 'California Academy of Sciences', year: '2024', type: 'Taxonomy' },
+      { name: 'Encyclopedia of Life', organization: 'EOL National Museum of Natural History', year: '2023', type: 'Natural History' },
+    ],
+    heroImage: ORGANISM_IMAGES['leafcutter-ant'],
+    ageAdaptations: {
+      '5-7': {
+        summary: 'Leafcutter ants are super-strong tiny insects that carry big green leaf pieces over their heads like little umbrellas! They live in huge underground cities.',
+        howItBreathes: 'Ants have tiny breathing holes called spiracles along the sides of their bodies instead of noses.',
+        whatItEats: 'They don\'t eat the leaves! They feed the leaves to a tiny mushroom garden inside their nest, then eat the mushrooms.',
+        howItMoves: 'Six speedy legs let them scurry up giant trees and carry heavy leaves all the way back home.',
+        howItProtects: 'Big soldier ants with strong jaws guard the nest, while tiny sister ants ride on leaves to chase away flies!',
+        funFactCallout: 'Did you know? An ant can carry 50 times its own weight—that is like you carrying a family car!',
+      },
+      '8-10': {
+        summary: 'Leafcutter ants are social insects living in colonies of millions. They are nature\'s master agriculturalists, harvesting rainforest vegetation to cultivate specialized subterranean fungus gardens.',
+        howItBreathes: 'They breathe via microscopic spiracles along their thorax and abdomen, diffusing oxygen directly through a network of internal tracheal air tubes.',
+        whatItEats: 'They practice mutualistic agriculture: leaves feed a unique fungus (Leucoagaricus), which produces nutrient-rich food packets called gongylidia for the ants.',
+        howItMoves: 'Six jointed legs with hooked claws allow them to easily scale wet rainforest trunks and traverse leaf litter trails.',
+        howItProtects: 'Colony defense is managed by giant soldier ants with enlarged head capsules and sharp mandibles that can pierce predator skin.',
+        adaptationsSummary: 'Trail-following pheromones create invisible scent highways guiding thousands of workers across hundreds of yards.',
+      },
+      '11-13': {
+        summary: 'Atta cephalotes is an apex Neotropical herbivore and ecosystem engineer. Colonies function as eusocial superorganisms with sophisticated division of labor across polymorphic worker castes.',
+        physiology: 'Possesses an open circulatory system with hemolymph pumped by a dorsal vessel. Metapleural glands produce potent antimicrobial secretions that protect their fungal monocultures from parasitic molds.',
+        ecologicalNiche: 'Major primary consumers in Neotropical forests processing ~15% of all leaf biomass. Deep excavations aerate dense tropical clay soils and cycle subterranean organic matter.',
+        adaptationsSummary: 'Zinc-enriched cutting edges on mandibles prevent wear when slicing tough, fibrous dicot foliage. Epibiotic bacteria on the ants\' cuticles synthesize antibiotic defenses for the crops.',
+        conservationInsight: 'Deforestation and pesticide use disrupt reproductive nuptial flights by virgin queen alates and eliminate old-growth nest sites.',
+      },
+      '14-15': {
+        summary: 'Atta cephalotes demonstrates the pinnacle of evolutionary mutualism between Attine hymenopterans and basidiomycete fungi established ~50 million years ago. A single colony comprises up to 5–8 million individuals functioning as an integrated biological unit.',
+        physiology: 'Tracheal oxygen delivery is modulated by muscular spiracular valves. Caste polymorphism (minims, medias, majors) is determined epigenetically by larval diet volume and pheromonal regulation from queen mandibular secretions.',
+        ecologicalNiche: 'Keystone ecosystem engineers whose massive subterranean complexes (often exceeding 600 m² and 6 m depth) accelerate soil mineral turnover and reshape rainforest hydrology.',
+        evolutionaryContext: 'Represents the derived higher attine clade within Myrmicinae, distinguished by transitioning from ancestral dead-vegetation yeast farming to active living-foliage cultivation.',
+        conservationScience: 'Acts as a vital indicator of canopy connectivity and soil ecosystem health; fragmented tropical edges alter colony densities and trophic interactions with phorid fly parasitoids.',
+      },
+    },
+    fallbackQuiz: [
+      {
+        question: 'What do leafcutter ants do with the leaves they cut from rainforest trees?',
+        options: ['They eat the leaves directly for dinner', 'They chew them into mulch to grow an underground fungus garden that feeds the colony', 'They use them to build tree houses', 'They wear them as raincoats'],
+        correctIndex: 1,
+        explanation: 'Leafcutter ants do not eat leaves directly! They are farmers who chew leaves into mulch to nourish a special fungus that produces edible food bodies for the colony.',
+      },
+      {
+        question: 'How much weight can a leafcutter ant worker carry in its mandibles?',
+        options: ['Half its body weight', 'Up to 50 times its body weight', '10 pounds', 'Nothing at all'],
+        correctIndex: 1,
+        explanation: 'Thanks to compact muscular exoskeletons, leafcutter ants routinely lift and carry foliage weighing 20 to 50 times their own mass.',
+      },
+      {
+        question: 'Why do tiny "minim" worker ants ride on top of the leaves carried by bigger workers?',
+        options: ['They are too lazy to walk', 'To protect the carrier ant from parasitic phorid flies that try to lay eggs on her head', 'To take a nap', 'To eat the leaf while moving'],
+        correctIndex: 1,
+        explanation: 'Minim ants act as aerial bodyguards, riding on the leaves to swat away tiny parasitic phorid flies looking to attack the carrier ant.',
+      },
+    ],
+    story: {
+      title: 'The Green Flag March',
+      synopsis: 'A young worker ant named Nia journeys into the high rainforest canopy on her first harvest expedition.',
+      content: `High in the sunlit canopy of the tropical rainforest, the morning air was warm with the scent of wild orchids and wet leaves. Nia, a young leafcutter ant with bright chestnut armor and razor-sharp mandibles, stepped onto the marching highway.\n\nHer antennae twitched, reading the invisible scent trail laid down by scout sisters. Reaching a broad mahogany branch, Nia clamped her jaws onto the edge of a fresh leaf and began to vibrate her head. Zzz-zzz-zt! Her mandibles sheared through the tough leaf like a pair of high-speed scissors.\n\nWithin seconds, she held a green crescent three times her own size. Hoisting it upright over her back like a sailing sail, she turned to join the marching line. Thousands of sisters marched together, carrying an endless green river of leaves across the forest floor.\n\nA tiny sister named Kiri hopped on top of Nia's leaf, scanning the air to protect her from pesky parasitic flies. Down into the cool darkness of the underground nest they went, delivering their harvest to the fragrant fungal gardens that fed the entire queen's family. Nia touched antennae with her sisters, proud to be part of the greatest farming family on Earth.`,
+      scientificLesson: 'Leafcutter ants demonstrate how division of labor and mutualistic farming allow tiny creatures to sustain thriving superorganism colonies.',
+    },
+  },
 ];
+
+// Enrich all organisms with image architecture package fields
+ORGANISMS.forEach((org) => {
+  const pkg = ORGANISM_IMAGE_CATALOG[org.id];
+  if (pkg) {
+    org.image = pkg.image;
+    org.thumbnail = pkg.thumbnail;
+    org.gallery = pkg.gallery;
+    org.imageSource = pkg.imageSource;
+    org.imageCredit = pkg.imageCredit;
+    if (pkg.isReconstruction !== undefined) {
+      org.isReconstruction = pkg.isReconstruction;
+    }
+    if (pkg.reconstructionNote) {
+      org.reconstructionNote = pkg.reconstructionNote;
+    }
+    if (pkg.isMicroscopic !== undefined) {
+      org.isMicroscopic = pkg.isMicroscopic;
+    }
+    if (pkg.magnification) {
+      org.magnification = pkg.magnification;
+    }
+    org.heroImage = pkg.image;
+  }
+});
+
+
 
 
 

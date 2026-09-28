@@ -129,6 +129,16 @@ export interface QuizQuestion {
   ageBand?: AgeBand;
 }
 
+export interface GalleryImage {
+  id: string;
+  url: string;
+  caption: string;
+  behavior?: string; // Natural behavior e.g. "Swimming", "Breaching", "Hunting", "Close-up", "Flower & Seeds"
+  credit?: string; // Photographer / source attribution
+  sourceUrl?: string;
+  isReconstruction?: boolean;
+}
+
 export interface Story {
   title: string;
   synopsis: string;
@@ -174,10 +184,18 @@ export interface Organism {
   taxonomy: Taxonomy;
   sources: SourceReference[];
   heroImage: string;
+  // Image Source Architecture Fields
+  image?: string; // High-resolution primary photograph
+  thumbnail?: string; // Fast loading thumbnail for search & cards
+  gallery?: GalleryImage[]; // Multiple natural behavior photos
+  imageSource?: string; // Source repository e.g. "Wikimedia Commons", "NOAA", "Smithsonian"
+  imageCredit?: string; // Specific photographer & license
+  isReconstruction?: boolean; // For prehistoric organisms
+  reconstructionNote?: string; // E.g. "Scientifically informed paleoart reconstruction based on fossil evidence"
   isExtinct?: boolean;
   geologicalEra?: string; // e.g. "Late Cretaceous (68–66 million years ago)"
   isMicroscopic?: boolean;
-  magnification?: string;
+  magnification?: string; // E.g. "Image shown under a microscope (1,500× magnification)"
   ageAdaptations: AgeAdaptedContent;
   fallbackQuiz: QuizQuestion[];
   story: Story;
