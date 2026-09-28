@@ -1,0 +1,2 @@
+AI-Powered Age-Adaptive Biodiversity Learning Platform
+Developed an interactive educational platform that adapts biodiversity content to a child's age, covering animals, plants, microorganisms and prehistoric life. Implemented reusable organism profiles, ecosystem exploration, interactive taxonomy/body diagrams, quizzes, stories, conservation information, progress tracking and Gemini-powered age-adaptive explanations.
