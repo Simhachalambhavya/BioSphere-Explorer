@@ -9,6 +9,22 @@
     <meta property="og:description" content="Interactive, AI-powered, age-adaptive encyclopedia of life for children and young scientists." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Gracefully prevent unhandled WebSocket rejection errors in preview iframe environments
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event && event.reason;
+        var msg = (typeof reason === 'string' ? reason : (reason && reason.message) || '') + '';
+        if (msg.includes('WebSocket') || msg.includes('websocket')) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = (event && event.message) || '';
+        if (typeof msg === 'string' && (msg.includes('WebSocket') || msg.includes('websocket'))) {
+          event.preventDefault();
+        }
+      });
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
